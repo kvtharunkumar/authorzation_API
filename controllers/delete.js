@@ -14,6 +14,7 @@ const deletion= async(req,res)=>
         collection.deleteOne({name:name});
         return res.status(200).send("deleted sucessfully");
     }
+    return res.status(200).send("user not exists to delte");
 }
 
 module.exports={deletion};

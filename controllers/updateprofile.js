@@ -19,7 +19,7 @@ const update=async (req,res)=>
       { name: name }, 
       { $set: { password: hashed_password} } 
     );
-    return res.status(200).send("updated  sucessfully");
+     res.status(200).send("updated  sucessfully");
     
 
 }

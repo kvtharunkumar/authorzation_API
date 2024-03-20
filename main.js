@@ -9,7 +9,7 @@ const view_profile = require("./routers/view_profile");
 main.use(express.urlencoded({ extended: false }));
 main.use(express.json());
 main.use("/login", login);
-main.use("/register", register);
+main.use('/register',register);
 main.use("/update", update);
 main.use("/delete", deletion);
 main.use('/view_profile',view_profile);
